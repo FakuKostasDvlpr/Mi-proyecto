@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
 
+
+
 :root{
     --clippy: polygon(0 0, 0 0, 0 100% , 0 100%);
 }
@@ -9,10 +11,10 @@ body{
     background: #44A08D; 
     height: 100vh;
     display: flex;
-    background: #FFE000;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #799F0C, #FFE000);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #799F0C, #FFE000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
+    background: #000000;  
+    background: -webkit-linear-gradient(to right, #0f9b0f, #000000);  
+    background: linear-gradient(to right, #0f9b0f, #000000); 
+
     cursor: url(cursor.png), auto;
 
     
@@ -21,19 +23,28 @@ body{
 .texts{
     margin: auto;
     display: flex;
-    flex-direction: column;
+    flex-direction:column;
     align-items: flex-start;
 }
 
 .tittle{
+    text-align: center;
+    left:20%;
     font-size: 5em;
-    margin-bottom: .0em;
+    margin-bottom: .1em;
+    text-shadow: 1px 6px 0 rgb(255, 255, 255), -5px 5px 0 white;
+    margin-top: auto;
 
 }
 
 .subtittle{
-    font-size: 2.5em;
+    text-align: center;
+    font-size: 3.5em;
     font-weight: 300em;
+    text-shadow: 1px 5px 0 rgb(243, 243, 243), -4px 3px 0 white;
+    margin-bottom: 1em;
+    margin-top: auto;
+
 }
 
 .name{
@@ -43,8 +54,8 @@ body{
 .name::before{
     content: "";
     display: block;
-    background:rgb(98, 59, 238);
-    width: 120%;
+    background:#09b628;
+    width: 100%;
     height: 100%;
     position: absolute;
     top: 0;
@@ -54,7 +65,8 @@ body{
 }
 
 .subtittle::before{
-    background: #634be6;
+    background:#09b628;
+    text-align: center;
 }
 
 .name:hover::before{
